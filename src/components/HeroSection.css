@@ -1,0 +1,68 @@
+/* Container principale della sezione About Us */
+.about-us-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+/* Stile della sezione video */
+.video-section {
+  max-width: 600px;
+}
+
+/* Stile del video */
+.video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Stile della sezione testo */
+.text-section {
+  max-width: 600px;
+}
+
+.text-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Stile del pulsante */
+.details-button {
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.details-button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Responsività per dispositivi più piccoli */
+@media (max-width: 768px) {
+  .about-us-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .video-section {
+    width: 100%;
+  }
+
+  .text-section {
+    max-width: 100%;
+  }
+}

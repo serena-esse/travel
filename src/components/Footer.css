@@ -1,0 +1,55 @@
+/* Imposta l'immagine come sfondo */
+.background-container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url("/public/media/footer.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Stile per il footer */
+.footer {
+  background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+  max-width: 100vw;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Stile per le icone social */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ccc;
+}
+
+/* Ottimizzazione per diversi dispositivi */
+@media (max-width: 768px) {
+  .background-container {
+    background-position: top;
+    background-size: contain; /* Aggiustamento immagine per schermi più piccoli */
+  }
+
+  .footer {
+    font-size: 1em; /* Riduzione dimensione testo */
+  }
+
+  .social-icons a {
+    font-size: 1.2em; /* Riduzione dimensione icone */
+  }
+}
